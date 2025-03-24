@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script src='//whephiwums.com/sdk.js' data-zone='9104375' data-sdk='show_9104375'></script>
+    <script src='//whephiwums.com/sdk.js' data-zone='9127945' data-sdk='show_9127945'></script>
 
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -332,8 +332,8 @@
         document.getElementById('balance').textContent = balance.toFixed(3);
 
         function showRewardedAd() {
-            if (typeof show_9104375 === 'function') {
-                show_9104375().then(() => {
+            if (typeof show_9127945 === 'function') {
+                show_9127945().then(() => {
                     rewardCount += 1;  
                     balance += 0.005;  
 
@@ -382,7 +382,7 @@
 
     // Rewarded Popup
 
-show_9104375('pop').then(() => {
+show_9127945('pop').then(() => {
     // user watch ad till the end or close it in interstitial format
     // your code to reward user for rewarded format
 }).catch(e => {
@@ -392,7 +392,7 @@ show_9104375('pop').then(() => {
 
     // In-App Interstitial 
 
-show_9104375({ 
+show_9127945({ 
   type: 'inApp', 
   inAppSettings: { 
     frequency: 1080, 
